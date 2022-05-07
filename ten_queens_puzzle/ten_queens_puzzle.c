@@ -13,7 +13,7 @@
 #include <unistd.h>
 #include <stdio.h>
 #ifndef SIZE
-# define SIZE 4
+# define SIZE 10
 #endif
 
 void	ft_putnbr(int nbr)
@@ -26,9 +26,7 @@ void	ft_putnbr(int nbr)
 		prnt = 48 + (nbr % 10);
 	}
 	else
-	{
 		prnt = 48 + nbr;
-	}
 	write(1, &prnt, 1);
 }
 
